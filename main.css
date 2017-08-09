@@ -1,15 +1,6 @@
-/*OrangeOctober MicroSite
+/*PACER October MicroSite
  *developed by Alex Nelson
 */
-
-body {
-    /*background-image: url("__");*/
-    /*font-family: 'Ubuntu Mono', monospace;*/
-    padding: 115px, 115px, 115px, 115px;
-    /*margin: auto;*/
-    /*max-width: 1280px;*/
-}
-/*head { font-family: 'Ubuntu Mono', monospace; }*/
 
 input[type=checkbox] {
     display: block;
@@ -21,13 +12,21 @@ input[type=checkbox] {
     background-position: center center;
     background-size: contain;
 }
-
 button {
     /*font-family: 'Ubuntu Mono', monospace;*/
-    font-size: 18px;
-    font-color: white;
+    font-size: 26px;
+    /*font-color: white;*/
     border: transparent;
-    background: orange;
+    background: #F15C32;
+    text-align: center;
+    vertical-align: center;
+    height: 10vw;
+    width: 26vw;
+    margin: 0 2.5vw 0 2.5vw;
+}
+button:hover {
+    /*background: blue;*/
+    opacity: .6;
 }
 
 h1 { text-align: center; }
@@ -47,24 +46,21 @@ a { color: black; }
     word-wrap: break-word;
 }
 
-.link span{ color:orange; font-size:15px; }
-.link:hover span{
-    font-color:orange;
-    
- }
+.link span { color:#F15C32; font-size:15px; }
+.link:hover span { font-color:#F15C32; }
 
-.button span{ color:orange; font-size:15px; }
-.button:hover span{ font-style:italic; }
+.button span { color:#F15C32; font-size:15px; }
+.button:hover span { font-style:italic; }
 
 
-.blink span{ color:black; /*font-size:15px;*/ }
-.blink:hover span{ font-style:italic; }
+.blink span { color:black; /*font-size:15px;*/ }
+.blink:hover span { font-style:italic; }
 
 .header {
     text-align: center;
     padding-top: .5%;
     float: center;
-    width: 100%;
+    width: 100vw;
 }
 
 .footer {
@@ -72,17 +68,18 @@ a { color: black; }
     text-align: center;
     /*font-size: 14px;*/
     /*position: absolute;*/
-    padding-bottom: 2.5%;
-    width: 100%;
+    padding: .5vh .5vw .5vh .5vw;
+    width: 99%;
     /*vertical-align: center;*/
     /*padding: 1rem;*/
+    background: #F15C32;
 }
 
 .block {
     height: 100px;
     width: 100px;
     /*display:inline-block;*/
-    margin: 10px;
+    /*margin: 10px;*/
 }
 
 section {
@@ -112,7 +109,7 @@ section {
     text-align: center;
 }
 
-div.scroll {
+/*div.scroll {
    background-color: #00FFFF ;
    width: 100vw;
    height: 80vw;
@@ -124,11 +121,41 @@ div.hidden {
    width: 100vw;
    height: 80vw;
    overflow: hidden;
+}*/
+
+div.gallery {
+    padding: .5vh .5vw .5vh .5vw;
+    /*border: 1px solid #ccc;*/
+    float: left;
+    /*width: 24.5vw;*/
+    display: block;
+}
+
+div.gallery:hover {
+    /*border: 1px solid #777;*/
+}
+
+div.gallery img {
+    padding: 1vh 1vw 0vh 1vw;
+    width: 20vw;
+    height: auto;
+}
+
+div.desc {
+    /*padding: .5em;*/
+    margin: 0vh 1vw 2vh 2vw;
+    text-align: center;
+    background: white;
+    width: 18vw;
+    /*height: auto;*/
 }
 
 
 
+
+/*--------------------------------------------------------------------------------------------------------*/
 /*--------START EFFECT STYLING--------*/
+/*---------------------------------------------------------------------------------------------------------*/
 @font-face {
     font-weight: normal;
     font-style: normal;
@@ -142,7 +169,7 @@ div.hidden {
 
 .grid {
     /*position: relative;*/
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     /*padding: 1em 0 4em;*/
     /*max-width: 1000px;*/
     list-style: none;
@@ -154,14 +181,14 @@ div.hidden {
 .grid figure {
     position: relative;
     float: left;
-    overflow: hidden;
+    overflow: auto;
     /*margin: 10px 1%;*/
     /*min-width: 320px;*/
     /*max-width: 480px;*/
     /*max-height: 360px;*/
-    width: 48%;
+    /*width: 48%;*/
     /*background: #3085a3;*/
-    background: orange;
+    background: #F15C32;
     text-align: center;
     cursor: pointer;
 }
@@ -271,13 +298,16 @@ figure.effect-zoe:hover p.icon-links a:focus {
     /*color: orange;*/
 }
 
-figure.effect-zoe p.description {
+
+/*FLAG*/
+figure.effect-goliath p.description {
     position: absolute;
-    bottom: 8em;
-    padding: 2em;
+    bottom: -1em;
+    /*padding: 2em;*/
     color: #fff;
     text-transform: none;
-    font-size: 90%;
+    text-align: left;
+    font-size: 80%;
     opacity: 0;
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
@@ -317,13 +347,15 @@ figure.effect-zoe h2 {
     display: inline-block;
 }
 
-figure.effect-zoe:hover p.description {
+
+/*FLAG*/
+figure.effect-goliath:hover p.description {
     opacity: 1;
 }
 
 /*FLAG*/
-figure.effect-zoe:hover img{
-    color: orange;
+figure.effect-zoe:hover img {
+    color: #F15C32;
     opacity: 0.2;
     filter: alpha(opacity=30);
 
@@ -442,7 +474,7 @@ a:hover, a:focus {
 
 .codrops-demos a {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 0px;
     padding: 1em 1.5em;
     text-transform: uppercase;
     font-weight: bold;
@@ -481,7 +513,7 @@ a:hover, a:focus {
 }
 
 .codrops-icon:before {
-    margin: 0 4px;
+    margin: 0 0px;
     text-transform: none;
     font-weight: normal;
     font-style: normal;
@@ -509,7 +541,7 @@ a:hover, a:focus {
 
 .related > a {
     display: inline-block;
-    margin: 20px 10px;
+    /*margin: 20px 10px;*/
     padding: 25px;
     border: 1px solid #4f7f90;
     text-align: center;
@@ -546,7 +578,7 @@ a:hover, a:focus {
 }
 .test1 {
 
-    background-color:orange;
+    background-color:#F15C32;
     width:31vw;
     height: 40vh;
     display: inline-block;
@@ -559,7 +591,8 @@ a:hover, a:focus {
     display: inline-block;
 }
 figure.effect-goliath {
-    background: #df4e4e;
+    background: #F15C32;
+    opacity: 
 }
 
 figure.effect-goliath img,
@@ -569,6 +602,7 @@ figure.effect-goliath h2 {
 }
 
 figure.effect-goliath img {
+    color:#F15C32;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -592,6 +626,7 @@ figure.effect-goliath p {
 }
 
 figure.effect-goliath:hover img {
+    color:#F15C32;
     -webkit-transform: translate3d(0,-80px,0);
     transform: translate3d(0,-80px,0);
 }
